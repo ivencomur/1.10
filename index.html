@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Ivan Cortés Portfolio </title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@400;700&display=swap" rel="stylesheet">  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.production.css">  
+</head>
+<body>
+  <!--Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Ivan Cortés Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:ivancortes@hotmail.com">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="profile container ">
+    <h1 class="header__title text-center">Welcome to my JavaScript project!</h1>
+    <div class="text-center">
+      <img src="img/pokelogo.svg" width="300" height="250" alt="Pokémon logo">
+    </div>
+    <ul class="pokemon-list list-group">
+
+    </ul>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal" id="pokemonModal" tabindex="-1" 
+    role="dialog" aria-labelledby="pokemonModalLabel" 
+    aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pokemonModalLabel"></h5>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="modal-image" class="img-fluid mb-3" alt="Pokemon">
+            <p id="modal-height"></p>
+            <p id="modal-types"></p>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer with Contact Info -->
+  <footer class="page-footer">
+   
+      <br>
+      <br>
+      <p>Ivan Cortés</p>
+      <p>Lawrenceville, GA, USA</p>
+      <p>Tel <a href="tel:+17608******">+17608******</a>
+      </p>
+      <a href="mailto:ivancortes@hotmail.com">ivancortes@hotmail.com</a>
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/ivencomur" target="_blank">
+          <img src="./img/logo_github_icon.svg" alt="Github" width="30" height="30">
+        </a>
+        <a href="https://x.com/IVENCOMUR" target="_blank">
+          <img src="./img/xformertwittericon.svg" alt="X former Twitter" width="30" height="30">
+        </a>
+        <a href="https://www.linkedin.com/in/ivan-cortes-murcia-22053953" target="_blank">
+          <img src="./img/linkedinicon.svg" alt="LinkedIn" width="30" height="30">
+        </a>
+      </div>
+    </footer>
+
+  <!-- JS and dependencies for Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script> 
+</body>
+</html>
